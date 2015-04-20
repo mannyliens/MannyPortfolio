@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>MyPortfolio: About Me</title>
+        <!-- external stylelsheets -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/landing-page.css" rel="stylesheet">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+        <script src="js/jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                // hides all show links on load
+                $("a[id^='hide-link']").hide();
+                
+                // hides & shows links from panel 1
+                $('#collapseOne').on('hidden.bs.collapse', function() {
+                    $('#show-link-1').show();
+                    $('#hide-link-1').hide();
+                });
+                $('#collapseOne').on('show.bs.collapse', function() {
+                    $('#show-link-1').hide();
+                    $('#hide-link-1').show();
+                });
+                // hides & shows links from panel 2
+                $('#collapseTwo').on('hidden.bs.collapse', function() {
+                    $('#show-link-2').show();
+                    $('#hide-link-2').hide();
+                });
+                $('#collapseTwo').on('show.bs.collapse', function() {
+                    $('#show-link-2').hide();
+                    $('#hide-link-2').show();
+                });
+                // hides & shows links from panel 3
+                $('#collapseThree').on('hidden.bs.collapse', function() {
+                    $('#show-link-3').show();
+                    $('#hide-link-3').hide();
+                });
+                $('#collapseThree').on('show.bs.collapse', function() {
+                    $('#show-link-3').hide();
+                    $('#hide-link-3').show();
+                });
+                // hides & shows links from panel 4
+                $('#collapseFour').on('hidden.bs.collapse', function() {
+                    $('#show-link-4').show();
+                    $('#hide-link-4').hide();
+                });
+                $('#collapseFour').on('show.bs.collapse', function() {
+                    $('#show-link-4').hide();
+                    $('#hide-link-4').show();
+                });
+                // hides & shows links from panel 5
+                $('#collapseFive').on('hidden.bs.collapse', function() {
+                    $('#show-link-5').show();
+                    $('#hide-link-5').hide();
+                });
+                $('#collapseFive').on('show.bs.collapse', function() {
+                    $('#show-link-5').hide();
+                    $('#hide-link-5').show();
+                });
+                // hides & shows links from panel 6
+                $('#collapseSix').on('hidden.bs.collapse', function() {
+                    $('#show-link-6').show();
+                    $('#hide-link-6').hide();
+                });
+                $('#collapseSix').on('show.bs.collapse', function() {
+                    $('#show-link-6').hide();
+                    $('#hide-link-6').show();
+                });
+            });
+
+        </script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+            <div class="container topnav">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand topnav" href="index.html"><span class="glyphicon glyphicon-home">&nbsp;Home</span></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="about-me.html">More Info</a>
+                        </li>
+                        <li>
+                            <a href="resume.html">Resume</a>
+                        </li>
+                        <li>
+                            <a href="sample-work.html">Sample Work</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <div class="intro-header-4">
+            <div class="container">
+                <!-- Panel #1 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h1 class="panel-title">
+                            Home Page
+                            <span class="pull-right">
+                                <a id="hide-link-1" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Hide
+                                </a>
+                                <a id="show-link-1" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Show
+                                </a>
+                            </span>
+                        </h1>
+                    </div>
+                    <div class="collapse" id="collapseOne">
+                        <div class="well">
+                            <p>Sample home page updated with Vignette Content Management System (VCM)</p>
+                            <div class="row">
+                                <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+                                    <div class="thumbnail">
+                                        <img src="img/sw-home.png" alt="sample work - home">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End of Panel #1--> 
+                
+                <!-- Panel #2 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h1 class="panel-title">
+                            Registration Form
+                            <span class="pull-right">
+                                <a id="hide-link-2" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Hide
+                                </a>
+                                <a id="show-link-2" data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    Show
+                                </a>
+                            </span>
+                        </h1>
+                    </div>
+                    <div class="collapse" id="collapseTwo">
+                        <div class="well">
+                            <p>Sample Registration Form</p>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="thumbnail">
+                                        <img src="img/sw-reg-01.png" alt="sample work - registration form 01">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="thumbnail">
+                                        <img src="img/sw-reg-02.png" alt="sample work - registration form 02">
+                                    </div>
+                                </div>
+                                <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+                                    <div class="thumbnail">
+                                        <img src="img/sw-reg-03.png" alt="sample work - registration form 03">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Panel #2-->
+                <!-- Panel #3 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h1 class="panel-title">
+                            Database
+                            <span class="pull-right">
+                                <a id="hide-link-3" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapsFour">
+                                    Hide
+                                </a>
+                                <a id="show-link-3" data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseFour">
+                                    Show
+                                </a>
+                            </span>
+                        </h1>
+                    </div>
+                    <div class="collapse" id="collapseThree">
+                        <div class="well">
+                            <p>For each MB Event, a session and miscellaneous information must be created in the DB2 database. The JSP creates
+                                queries that retrieves specific information used on the registration form.
+                            </p>
+                            <div class="row">
+                                <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+                                    <div class="thumbnail">
+                                        <img src="img/sw-reg-04.png" alt="sample work - registration form 04">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End of Panel #3 -->
+                <!-- Panel #4 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <h1 class="panel-title">
+                            Validation Plugin
+                            <span class="pull-right">
+                                <a id="hide-link-4" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Hide
+                                </a>
+                                <a id="show-link-4" data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    Show
+                                </a>
+                            </span>
+                        </h1>
+                    </div>
+                    <div class="collapse" id="collapseFour">
+                        <div class="well">
+                            <p>Each MB website is implemented with the jQuery Validation plugin and a masked input plugin. The validation plugin 
+                                prevents empty input fields to be sent. Whereas, the masked plugin allowed the users to input telephone numbers in a
+                                specific formats.
+                            </p>
+                            <div class="row">
+                                <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+                                    <div class="thumbnail">
+                                        <img src="img/sw-reg-05.png" alt="sample work - registration form 05">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End of Panel #4 -->
+                <!-- Panel #5 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFive">
+                        <h1 class="panel-title">
+                            jQuery UI Plugin
+                            <span class="pull-right">
+                                <a id="hide-link-5" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Hide
+                                </a>
+                                <a id="show-link-5" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Show
+                                </a>
+                            </span>
+                        </h1>
+                    </div>
+                    <div class="collapse" id="collapseFive">
+                        <div class="well">
+                            <p>Most MB sites are implemented with the jQuery UI Plugin to create a better interaction experience with the user. The datepicker
+                                widget is being used to allow the user pick their desire dates with the Plugin's GUI. In additional, options and properties are
+                                included the reduce errors and mistakes among the users.
+                            </p>
+                            <div class="row">
+                                <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+                                    <div class="thumbnail">
+                                        <img src="img/sw-reg-06.png" alt="sample work - registration form 06">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End of Panel #5 -->
+                <!-- Panel #6 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h1 class="panel-title">
+                            Miscellaneous
+                            <span class="pull-right">
+                                <a id="hide-link-6" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Hide
+                                </a>
+                                <a id="show-link-6" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Show
+                                </a>
+                            </span>
+                        </h1>
+                    </div>
+                    <div class="collapse" id="collapseSix">
+                        <div class="well">
+                            <p>Clients will make specific requests for each website and it's the developer's duty to meet these goals.
+                            </p>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    Example: On Monday the Spa is available at specific hours
+                                    <div class="thumbnail">
+                                        <img src="img/sw-reg-07.png" alt="sample work - registration form 07">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    Example: On Tues the Spa hours are reduce.
+                                    <div class="thumbnail">
+                                        <img src="img/sw-reg-08.png" alt="sample work - registration form 08">
+                                    </div>
+                                </div>
+                                <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+                                    A common registration form includes the user selecting activities. The code can be manipulated having the user
+                                    select one activity or multiple activities (with respect to the given time frame).
+                                    <div class="thumbnail">
+                                        <img src="img/sw-reg-09.png" alt="sample work - registration form 09">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Panel #6-->
+            </div> <!-- End of Container -->    
+        </div> <!-- End of header -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="copyright small">Copyright &copy; Emmanuel Liens 2015. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
